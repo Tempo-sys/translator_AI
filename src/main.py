@@ -6,7 +6,7 @@ from translator import translate
 from voice import text_to_speech
 
 
-
+# syncronization of the three modules
 
 
 def main():
