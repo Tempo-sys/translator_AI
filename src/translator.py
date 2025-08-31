@@ -1,4 +1,5 @@
 from googletrans import Translator
+import asyncio
 
 def translate (text: str, dest_language: str = "en") -> str:
     """
@@ -13,7 +14,7 @@ def translate (text: str, dest_language: str = "en") -> str:
     """
     
     translator = Translator()
-    translated = translator.translate(text, dest=dest_language)
+    translated = asyncio.run(translator.translate(text, dest=dest_language))
     print(f"[INFO] Translation complete: {translated.text}")
     
     return translated.text
