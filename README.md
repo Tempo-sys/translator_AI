@@ -1,0 +1,1 @@
+streamlit run c:/Users/M/Desktop/infomatico/Proyectos/translatorAI/src/mainStreamlit.py
